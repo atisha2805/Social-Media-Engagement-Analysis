@@ -1,0 +1,23 @@
+CREATE TABLE social_media_posts (
+    post_id VARCHAR2(20) PRIMARY KEY,
+    platform VARCHAR2(50),
+    content_type VARCHAR2(30),
+    topic VARCHAR2(100),
+    language VARCHAR2(30),
+    region VARCHAR2(50),
+    post_datetime DATE,
+    hashtags VARCHAR2(1000),
+    views NUMBER,
+    likes NUMBER,
+    comments NUMBER,
+    shares NUMBER,
+    engagement_rate NUMBER(12,6),
+    sentiment_score NUMBER(8,6),
+    is_viral NUMBER(1),
+    total_engagement NUMBER,
+    calculated_engagement_rate NUMBER(12,6),
+    posting_day VARCHAR2(20),
+    high_engagement_flag NUMBER(1),
+    interaction_exceeds_views NUMBER(1),
+    view_outlier NUMBER(1)
+);
